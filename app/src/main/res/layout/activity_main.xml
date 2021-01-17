@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3">
+
+        <EditText
+            android:id="@+id/sayi1"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:ems="10"
+            android:hint="Birinci ədədi yaz"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/sayi2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:ems="10"
+            android:hint="Ikinci ədədi yaz"
+            android:inputType="textPersonName"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:text="Hesabla"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:rotationX="0"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="343dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Yusif Müəllim - ƏBOB və ƏKOB "
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
